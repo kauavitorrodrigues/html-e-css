@@ -1,3 +1,3 @@
 # html-e-css
  
-teste
+este repositório contém o conteúdo do curso de html e css do cursoemvideo atualizado
