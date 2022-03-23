@@ -7,11 +7,13 @@
 :root {
     --fonte-titulo: 'Passion One', cursive;
     --fonte-corpo: 'Sriracha', cursive;
+    --fonte-pardao: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 *{
     margin: 0px;
     padding: 0px;
+    font-family: var(--fonte-pardao);
 }
 
 html, body {
@@ -29,7 +31,7 @@ header > h1{
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte-titulo);
-    font-size: 4em;
+    font-size: 10vw;
 }
 
 header > p{
@@ -52,6 +54,11 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-size: 3.5vw;
+}
+
+section > p {
+    font-family: var(--fonte-corpo);
 }
 
 section.normal {
@@ -65,10 +72,22 @@ section.imagem {
 }
 
 section.imagem > p{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.255);
-    width: 400px;
 }
 
+#img1 {
+    background-image: url(/desafios/desafio012/imagens/background001.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#img2 {
+    background-image: url(/desafios/desafio012/imagens/background002.jpg);
+    background-position: center bottom;
+    background-attachment: fixed;
+}
 footer{
     background-color: black;
     color: white;
