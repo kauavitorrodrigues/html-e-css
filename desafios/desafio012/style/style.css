@@ -14,86 +14,64 @@
     padding: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header{
     background-color: black;
+    color: white;
+    text-align: center;
 }
 
 header > h1{
-    padding: 40px 0px 0px 0px;
-    text-align: center;
+    padding-top: 50px;
+    font-variant: small-caps;
     font-family: var(--fonte-titulo);
     font-size: 4em;
-    color: white;
 }
 
 header > p{
     padding-bottom: 50px;
-    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
 }
 
-header > p > a{
+a {
     color: white;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-header > p > a:hover{
+a:hover{
     text-decoration: underline;
 }
 
-main > article > p {
-    font-family: var(--fonte-corpo);
-    font-size: 1.9em;
-    padding: 25px 25px 25px;
-    line-height: 45px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
 }
 
-#p1 {
-    font-family: var(--fonte-corpo);
-    font-size: 1.9em;
-    padding: 65px 25px 140px;
-    line-height: 45px;
+section.normal {
+    background-color: white;
+    color: black;
 }
 
-#image1 {
-    background: black url('/desafios/desafio012/imagens/background001.jpg') center center no-repeat fixed ;
-    font-family: var(--fonte-corpo);
-    font-size: 1.7em;
-    line-height: 45px;
-    padding: 60px 0px 60px 30px;
-    box-shadow: 1px 1px 3px 1px;
-}
-
-#image1 > p {
+section.imagem {
+    background-color: rgb(51, 51, 51);
     color: white;
 }
 
-#image2 {
-    background: black url('/desafios/desafio012/imagens/background002.jpg') center center no-repeat fixed ;
-    font-family: var(--fonte-corpo);
-    font-size: 1.7em;
-    line-height: 45px;
-    padding: 60px 0px 60px 30px;
-    box-shadow: 1px 1px 2px 1px;
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.255);
+    width: 400px;
 }
 
 footer{
     background-color: black;
     color: white;
-    padding: 10px 10px 10px 10px;
-    margin-top: 80px;
     text-align: center;
-}
-
-footer > p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-footer > p > a{
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+    padding: 10px;
 }
