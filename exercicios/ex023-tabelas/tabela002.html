@@ -13,7 +13,26 @@
         table {
             border-collapse: collapse;
             width: 600px;
+            position: sticky;
         }
+
+        caption {
+              font-size: 1.5em;
+              font-weight: bold;
+              padding: 10px;
+              background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) {
+              background-color: lightgray;
+        }
+
+        thead > tr > th {
+              position: sticky;
+              top: -1px;
+              background-color: rgb(65, 65, 65);
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -34,12 +53,11 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
-
+      <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+                  <th scope="col">Estado</th>
+                  <th scope="col" style="width: 50px;">População</th>
         </thead>
-
         <tbody>
             <tr>
                   <td>São Paulo</td>
@@ -144,7 +162,7 @@
      
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num">210.481.432</td>
         </tfoot>
     </table>
