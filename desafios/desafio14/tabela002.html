@@ -11,6 +11,7 @@
         }
         table {
             width: 500px;
+            height: 250px;
             border-collapse: collapse;
         }
 
@@ -18,38 +19,44 @@
             background-color: gray;
             color: white;
         }
-
-        .area, .media {
+        #grey {
             padding: 5px;
-        }
-
-        .media{
+            text-align: left;
             background-color: gray;
             color: white;
         }
 
-        .nota {
+        #head, #grey1 {
+            padding: 10px;
             text-align: center;
+            background-color: gray;
+            color: white;
         }
 
         th, td {
             border: 1px solid black;
             font-size: 1.3em;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <table>
         <thead>
-            <th scope="rowgroup">Área</th>
-            <th scope="rowgroup">Disciplinas</th>
-            <th scope="colgroup">Notas</th>
-            <th scope="rowgroup">Média</th>
+            <th rowspan="2" id="head" scope="col">Área</th>
+            <th rowspan="2" id="head" scope="col">Disciplinas</th>
+            <th colspan="2" id="head" scope="colgroup">Notas</th>
+            <th rowspan="2" id="head" scope="col">Média</th>
+
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
         </thead>
 
         <tbody>
             <tr>
-                <th rowspan="4" class="area">Exatas</th>
+                <th scope="rowgroup" rowspan="4" class="area">Exatas</th>
                 <td>Matemática</td>
                 <td class="nota">0.01</td>
                 <td class="nota">0.01</td>
@@ -78,12 +85,12 @@
             </tr>
 
             <tr>
-                <th colspan="4" class="media" scope="row">Média de Exatas</th>
-                <td class="nota">0.01</td>
+                <th colspan="4" id="grey" scope="row">Média de Exatas</th>
+                <td  id="grey1" >0.01</td>
             </tr>
 
             <tr>
-                <th rowspan="2" class="area">Humanas</th>
+                <th scope="rowgroup" rowspan="2" class="area">Humanas</th>
                 <td>Matemática</td>
                 <td class="nota">0.01</td>
                 <td class="nota">0.01</td>
@@ -97,8 +104,8 @@
                 <td class="nota">0.01</td>
             </tr>
 
-            <th colspan="4" class="media" scope="row">Média de Humanas</th>
-            <td class="nota">0.01</td>
+            <th colspan="4" id="grey" scope="row">Média de Humanas</th>
+            <td  id="grey1" >0.01</td>
 
         </tbody>
     </table>
